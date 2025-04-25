@@ -1,0 +1,5 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-autumn-star-a4dipekp.us-east-1.aws.neon.tech:5432/wallet_metamask?sslmode=require
+    username: wallet_metamask_owner
+    password: npg_eMs91XSRYgDA
