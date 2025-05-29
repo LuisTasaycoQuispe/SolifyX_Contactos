@@ -11,6 +11,7 @@ public class User {
     @Id
     private Integer Id;
     private String usuario;
+    private String mensaje;
     private String correo;
     private String codigo;
     private String contrasena;
