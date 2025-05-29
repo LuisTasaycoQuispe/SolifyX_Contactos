@@ -21,18 +21,20 @@ public class ContactosRest {
     }
 
     @GetMapping("/codigo/{codigo}")
-public Mono<ResponseEntity<?>> getContactosByCodigo(@PathVariable String codigo) {
-    return contactosService.findByCodigoPersona(codigo)
-        .collectList() 
-        .flatMap(contactos -> {
-            if (contactos.isEmpty()) {
-                return Mono.just(ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Persona no tiene contactos registrados")));
-            } else {
-                return Mono.just(ResponseEntity.ok(contactos));
-            }
-        })
-        .onErrorReturn(ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Persona no encontrada")));
-}
+    public Mono<ResponseEntity<?>> getContactosByCodigo(@PathVariable String codigo) {
+        return contactosService.findByCodigoPersona(codigo)
+                .collectList()
+                .flatMap(contactos -> {
+                    if (contactos.isEmpty()) {
+                        return Mono.just(ResponseEntity.status(HttpStatus.NOT_FOUND)
+                                .body(Map.of("error", "Persona no tiene contactos registrados")));
+                    } else {
+                        return Mono.just(ResponseEntity.ok(contactos));
+                    }
+                })
+                .onErrorReturn(
+                        ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Persona no encontrada")));
+    }
 
     @PostMapping
     public Mono<Contactos> createContacto(@RequestBody Contactos contacto) {

@@ -19,6 +19,12 @@ public class UserService {
         return userRepository.findAll();
     }
 
+
+
+    public Mono<User> findByCorreoAndContrasena(String correo, String contrasena) {
+    return userRepository.findByCorreoAndContrasena(correo, contrasena);
+}
+
     public Mono<User> findById(Integer id) {
         return userRepository.findById(id);
     }

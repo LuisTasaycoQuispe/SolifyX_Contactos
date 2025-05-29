@@ -15,10 +15,10 @@ public class SwaggerConfig {
     public OpenAPI apiInfo() {
         return new OpenAPI()
                 .servers(Collections
-                        .singletonList(new Server().url("http://localhost:8080/")))
+                        .singletonList(new Server().url("https://probable-parakeet-wrg94r9p6gvwc5p5-8080.app.github.dev/")))
                 .info(new Info()
 
-                        .title("TRADUCTOR")
+                        .title("Users")
                         .description("AS222S5_T03_be")
                         .version("1.0.0")
 

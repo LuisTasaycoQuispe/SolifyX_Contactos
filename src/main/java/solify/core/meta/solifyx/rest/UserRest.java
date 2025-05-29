@@ -1,10 +1,12 @@
 
 package solify.core.meta.solifyx.rest;
 
+import java.util.Map;
+import reactor.core.publisher.Mono;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 import solify.core.meta.solifyx.model.User;
 import solify.core.meta.solifyx.service.UserService;
 
@@ -17,6 +19,11 @@ public class UserRest {
 
     public UserRest(UserService userService) {
         this.userService = userService;
+    }
+
+    @GetMapping("/login")
+    public Mono<User> login(@RequestParam String correo, @RequestParam String contrasena) {
+        return userService.findByCorreoAndContrasena(correo, contrasena);
     }
 
     @GetMapping

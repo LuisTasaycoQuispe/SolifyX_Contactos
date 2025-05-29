@@ -1,0 +1,10 @@
+solify/core/meta/solifyx/model/Contactos.class
+solify/core/meta/solifyx/SolifyxApplication.class
+solify/core/meta/solifyx/config/SwaggerConfig.class
+solify/core/meta/solifyx/model/User.class
+solify/core/meta/solifyx/rest/ContactosRest.class
+solify/core/meta/solifyx/service/UserService.class
+solify/core/meta/solifyx/rest/UserRest.class
+solify/core/meta/solifyx/repository/UserRepository.class
+solify/core/meta/solifyx/service/ContactosService.class
+solify/core/meta/solifyx/repository/ContactosRepository.class

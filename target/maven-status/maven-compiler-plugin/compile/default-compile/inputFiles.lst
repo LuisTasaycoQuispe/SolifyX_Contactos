@@ -1,0 +1,10 @@
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/SolifyxApplication.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/config/SwaggerConfig.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/model/Contactos.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/model/User.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/repository/ContactosRepository.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/repository/UserRepository.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/rest/ContactosRest.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/rest/UserRest.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/service/ContactosService.java
+/workspaces/SolifyX_Contactos/src/main/java/solify/core/meta/solifyx/service/UserService.java
